@@ -3,6 +3,11 @@ import java.util.Scanner;
 
 public class CarApp {
     public static void main(String[] args) {
+        Plane p = new Plane();
+        Boat b = new Boat();
+        System.out.println(p.getMake());
+        System.out.println(b.getNumCabins());
+
         ArrayList<Car> cars = new ArrayList<>();
 
         Car car1 = new Car();
@@ -30,14 +35,14 @@ public class CarApp {
             System.out.println(car.getColor() + " " + car.getModel());
         }
 
-//        System.out.println(car1.start());
-//        System.out.println(car2.start());
-//        System.out.println(car1.accelerate());
-//        System.out.println(car2.accelerate());
-//        System.out.println(car1.setSpeed(50));
-//        System.out.println(car1.stop());
-//        System.out.println("The " + car2.getColor() + " " + car2.getModel()
-//                + " just passed the " + car1.getColor() + " " + car1.getModel());
+        System.out.println(car1.start());
+        System.out.println(car2.start());
+        System.out.println(car1.accelerate());
+        System.out.println(car2.accelerate());
+        System.out.println(car1.setSpeed(50));
+        System.out.println(car1.stop());
+        System.out.println("The " + car2.getColor() + " " + car2.getModel()
+                + " just passed the " + car1.getColor() + " " + car1.getModel());
 
     }
 }
